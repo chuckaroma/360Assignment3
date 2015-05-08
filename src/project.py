@@ -185,10 +185,8 @@ for i in range(width):
             vector = Vec3(x, y, z)
             draw = ImageDraw.Draw(sphere1, 'RGB')
             raycolor += rayColor(Vec3(0,0,0), vector, 0)
-            #c = 1/ns
         raycolor *= (1.0/ns) 
         icolor = (int(raycolor[0] * 255), int(raycolor[1] * 255), int(raycolor[2] * 255))
-        print icolor
         sphere1.putpixel((i,j) , icolor)
 #computes one ray and determines what color it is, send several rays here
         
